@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Form with Validation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <center>
+        <h2>Registration Form</h2>
+    <form id="registration-form">
+      <div class="form-control">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <small id="name-error" class="error">Please enter a valid name.</small>
+      </div>
+      <div class="form-control">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <small id="email-error" class="error">Please enter a valid email address.</small>
+      </div>
+      <div class="form-control">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <small id="password-error" class="error">Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.</small>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    </center>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
